@@ -6,7 +6,8 @@
   "scripts": {
     "test": "vitest",
     "gen:prisma": "prisma generate",
-    "run:dev": "ts-node-dev app/client.ts"
+    "run:dev": "ts-node-dev app/client.ts",
+    "postinstall": "prisma generate"
   },
   "keywords": [],
   "type": "module",
