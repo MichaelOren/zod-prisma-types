@@ -2,7 +2,12 @@
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
     "build": {
-      "outputs": ["dist/**"]
+      "outputs": [
+        "dist/**"
+      ]
+    },
+    "db:generate": {
+      "cache": false
     },
     "lint": {},
     "test": {}

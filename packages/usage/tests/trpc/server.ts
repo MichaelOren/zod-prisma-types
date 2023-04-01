@@ -1,4 +1,4 @@
-import { Decimal, DecimalJsLike } from '@prisma/client/runtime';
+import { Decimal, DecimalJsLike } from '.prisma/client/runtime';
 import { initTRPC } from '@trpc/server';
 import { createHTTPServer } from '@trpc/server/adapters/standalone';
 import {

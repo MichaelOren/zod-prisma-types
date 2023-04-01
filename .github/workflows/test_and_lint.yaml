@@ -46,7 +46,13 @@ jobs:
       #       ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --ignore-scripts
+
+      - name: Generate prisma
+        run: cd packages/usage && pnpm gen:prisma
 
       - name: Run tests
-        run: pnpm test
+        run:
+          pnpm test
+
+          # TODO: run prettier
