@@ -17,7 +17,7 @@ datasource db {
 // -----------------------------------------------
 
 generator zod {
-  provider                         = "ts-node-dev ../generator/src/bin.ts"
+  provider                         = "npx zod-prisma-types"
   // provider                         = "zod-prisma-types"
   output                           = "./generated/zod" // default is ./generated/zod
   useMultipleFiles                 = true // default is false 
